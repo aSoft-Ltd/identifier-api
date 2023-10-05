@@ -14,7 +14,7 @@ fun includeSubs(base: String, path: String = base, vararg subs: String) {
 }
 
 listOf(
-    "kash-api", "geo-api", "krono", "neat", "koncurrent", 
+    "kash-api", "geo-api", "krono-core", "neat", "koncurrent",
     "kollections", "kommander", "epsilon-api", "hormone",
 ).forEach {
     includeBuild("../$it")
@@ -22,6 +22,5 @@ listOf(
 
 rootProject.name = "identifier-api"
 
-includeSubs("identifier", ".", "core", "comm", "fields")
-includeSubs("identifier-legal", "legal", "dtos", "presenters")
-includeSubs("identifier-legal-sdk-client", "legal/sdk", "core")
+includeSubs("identifier", ".", "core", "comm")
+includeSubs("identifier-legal", "legal", "dtos")
