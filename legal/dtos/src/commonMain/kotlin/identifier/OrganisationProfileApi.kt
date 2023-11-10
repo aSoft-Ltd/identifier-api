@@ -3,7 +3,7 @@
 
 package identifier
 
-import epsilon.Blob
+import epsilon.RawFile
 import identifier.params.CorporateParams
 import kash.Currency
 import koncurrent.Later
@@ -13,7 +13,7 @@ interface OrganisationProfileApi {
 
     fun update(params: CorporateParams): Later<CorporateDto>
 
-    fun updateLogo(logo: Blob): Later<CorporateDto>
+    fun updateLogo(logo: RawFile): Later<CorporateDto>
 
     fun updateCurrency(currency: Currency): Later<Currency>
 

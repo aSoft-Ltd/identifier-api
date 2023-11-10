@@ -4,6 +4,7 @@
 package identifier
 
 import epsilon.Blob
+import epsilon.RawFile
 import identifier.params.IndividualProfileParams
 import identifier.params.PasswordParams
 import koncurrent.Later
@@ -11,7 +12,7 @@ import kotlin.js.JsExport
 
 interface PersonalProfileApi {
 
-    fun changeProfilePicture(file: Blob): Later<IndividualDto>
+    fun changeProfilePicture(file: RawFile): Later<IndividualDto>
 
     fun changePassword(params: PasswordParams): Later<IndividualDto>
 
