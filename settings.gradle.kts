@@ -22,5 +22,5 @@ listOf(
 
 rootProject.name = "identifier-api"
 
-includeSubs("identifier", ".", "core", "comm")
+includeSubs("identifier", ".", "core", "comm", "brands")
 includeSubs("identifier-legal", "legal", "dtos")
