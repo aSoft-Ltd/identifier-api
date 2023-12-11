@@ -7,7 +7,7 @@ import kollections.iListOf
 import krono.LocalDate
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-import kotlin.js.JsExport
+import kotlinx.JsExport
 
 @Serializable
 data class CorporateDto(

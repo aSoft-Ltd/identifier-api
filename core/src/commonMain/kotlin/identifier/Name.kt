@@ -4,7 +4,7 @@ package identifier
 
 import identifier.serializers.NameSerializer
 import kotlinx.serialization.Serializable
-import kotlin.js.JsExport
+import kotlinx.JsExport
 
 @Serializable(with = NameSerializer::class)
 class Name(val value: String) : CharSequence by value {

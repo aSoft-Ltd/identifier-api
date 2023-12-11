@@ -2,7 +2,7 @@
 
 package identifier.params
 
-import kotlin.js.JsExport
+import kotlinx.JsExport
 
 data class ContactParams(
     val name: String,

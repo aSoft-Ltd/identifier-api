@@ -6,7 +6,7 @@ package identifier
 import identifier.internal.EmailImpl
 import identifier.serializers.EmailSerializer
 import kotlinx.serialization.Serializable
-import kotlin.js.JsExport
+import kotlinx.JsExport
 import kotlin.jvm.JvmName
 import kotlin.jvm.JvmStatic
 

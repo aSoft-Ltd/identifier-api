@@ -7,7 +7,7 @@ import epsilon.RawFile
 import identifier.params.CorporateParams
 import kash.Currency
 import koncurrent.Later
-import kotlin.js.JsExport
+import kotlinx.JsExport
 
 interface OrganisationProfileApi {
 

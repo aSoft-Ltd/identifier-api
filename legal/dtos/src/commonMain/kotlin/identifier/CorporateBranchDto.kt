@@ -6,7 +6,7 @@ package identifier
 import geo.GeoLocation
 import kollections.iListOf
 import kotlinx.serialization.Serializable
-import kotlin.js.JsExport
+import kotlinx.JsExport
 
 @Serializable
 data class CorporateBranchDto(

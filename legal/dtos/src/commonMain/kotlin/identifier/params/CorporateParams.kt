@@ -9,7 +9,7 @@ import identifier.CorporateType
 import identifier.Industry
 import kotlinx.serialization.Serializable
 import krono.LocalDate
-import kotlin.js.JsExport
+import kotlinx.JsExport
 
 @Serializable
 data class CorporateParams(

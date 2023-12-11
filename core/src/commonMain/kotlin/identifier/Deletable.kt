@@ -2,7 +2,7 @@
 
 package identifier
 
-import kotlin.js.JsExport
+import kotlinx.JsExport
 
 interface Deletable {
     val deleted: Boolean

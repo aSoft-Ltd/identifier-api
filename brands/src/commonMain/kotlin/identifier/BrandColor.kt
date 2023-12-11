@@ -1,7 +1,7 @@
 @file:JsExport
 package identifier
 
-import kotlin.js.JsExport
+import kotlinx.JsExport
 import kotlinx.serialization.Serializable
 
 @Serializable

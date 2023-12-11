@@ -2,6 +2,6 @@
 
 package identifier
 
-import kotlin.js.JsExport
+import kotlinx.JsExport
 
 const val UNSET = "<unset>"

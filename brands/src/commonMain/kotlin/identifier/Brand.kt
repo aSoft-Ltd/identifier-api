@@ -4,7 +4,7 @@
 package identifier
 
 import kollections.List
-import kotlin.js.JsExport
+import kotlinx.JsExport
 import kotlinx.serialization.Serializable
 
 @Serializable

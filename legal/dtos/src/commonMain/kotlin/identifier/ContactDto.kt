@@ -3,7 +3,7 @@
 
 package identifier
 
-import kotlin.js.JsExport
+import kotlinx.JsExport
 import kollections.iListOf
 import kollections.toIList
 import kotlinx.serialization.Serializable

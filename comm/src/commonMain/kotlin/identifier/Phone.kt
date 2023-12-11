@@ -5,7 +5,7 @@ package identifier
 import identifier.internal.PhoneImpl
 import identifier.serializers.PhoneSerializer
 import kotlinx.serialization.Serializable
-import kotlin.js.JsExport
+import kotlinx.JsExport
 import kotlin.js.JsName
 import kotlin.jvm.JvmName
 import kotlin.jvm.JvmStatic

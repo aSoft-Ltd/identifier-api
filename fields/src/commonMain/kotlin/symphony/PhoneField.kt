@@ -6,7 +6,7 @@ package symphony
 import geo.Country
 import kollections.List
 import symphony.properties.Settable
-import kotlin.js.JsExport
+import kotlinx.JsExport
 import kotlin.js.JsName
 
 interface PhoneField : Field<PhoneOutput,PhoneFieldState>, PhoneFieldState {

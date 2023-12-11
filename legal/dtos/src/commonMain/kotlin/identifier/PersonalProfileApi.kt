@@ -8,7 +8,7 @@ import epsilon.RawFile
 import identifier.params.IndividualProfileParams
 import identifier.params.PasswordParams
 import koncurrent.Later
-import kotlin.js.JsExport
+import kotlinx.JsExport
 
 interface PersonalProfileApi {
 

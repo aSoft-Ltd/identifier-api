@@ -4,7 +4,7 @@ package identifier
 
 import geo.GeoLocation
 import kotlinx.serialization.Serializable
-import kotlin.js.JsExport
+import kotlinx.JsExport
 
 @Serializable
 sealed class LegalEntityDto {
