@@ -4,8 +4,9 @@
 package identifier
 
 import kotlinx.JsExport
-import kollections.iListOf
-import kollections.toIList
+import kollections.listOf
+import kollections.List
+import kollections.filterIsInstance
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -18,10 +19,10 @@ data class ContactDto(
      * - John
      */
     val name: String,
-    val comms: List<Comm> = iListOf(),
+    val comms: List<Comm> = listOf(),
     val role: String? = null,
     val isPrimary: Boolean = true,
 ) {
-    val emails get() = comms.filterIsInstance<UserEmail>().toIList()
-    val phones get() = comms.filterIsInstance<UserPhone>().toIList()
+    val emails get() = comms.filterIsInstance<UserEmail>()
+    val phones get() = comms.filterIsInstance<UserPhone>()
 }

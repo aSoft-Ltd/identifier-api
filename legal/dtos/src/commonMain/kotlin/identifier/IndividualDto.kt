@@ -4,8 +4,8 @@
 package identifier
 
 import geo.GeoLocation
-import kollections.iListOf
-import kollections.toIList
+import kollections.listOf
+import kollections.List
 import krono.LocalDate
 import kotlinx.serialization.Serializable
 import kotlinx.JsExport
@@ -18,13 +18,13 @@ data class IndividualDto(
     val title: String? = null,
     val dob: LocalDate? = null,
     val gender: Gender? = null,
-    val comms: List<Comm> = iListOf(),
+    val comms: List<Comm> = listOf(),
     override val gid: String = UNSET,
     val idDocumentNumber: String? = null,
     val idDocumentType: DocumentType? = null,
     val location: GeoLocation? = null,
     val address: String? = null
 ) : LegalEntityDto() {
-    val emails get() = comms.filterIsInstance<UserEmail>().toIList()
-    val phones get() = comms.filterIsInstance<UserPhone>().toIList()
+    val emails get() = comms.filterIsInstance<UserEmail>()
+    val phones get() = comms.filterIsInstance<UserPhone>()
 }

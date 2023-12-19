@@ -1,6 +1,7 @@
 package identifier
 
-import kollections.toIList
+import kollections.List
+import kollections.emptyList
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
@@ -19,6 +20,6 @@ class BrandConfiguration(
         domain = domain,
         address = address,
         color = color,
-        socials = socials.toIList()
+        socials = socials
     )
 }
