@@ -6,6 +6,7 @@ package identifier
 import geo.GeoLocation
 import kollections.listOf
 import kollections.List
+import kollections.filterIsInstance
 import krono.LocalDate
 import kotlinx.serialization.Serializable
 import kotlinx.JsExport

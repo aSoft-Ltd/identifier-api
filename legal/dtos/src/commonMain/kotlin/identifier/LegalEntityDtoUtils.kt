@@ -1,6 +1,7 @@
 package identifier
 
-import kollections.iListOf
+import kollections.firstOrNull
+import kollections.listOf
 
 fun LegalEntityDto.toCorporate() = when (this) {
     is CorporateDto -> this
@@ -17,7 +18,7 @@ private inline fun IndividualDto.toCorporate() = CorporateDto(
     name = name,
     headQuarters = CorporateBranchDto(
         name = "Headquarters",
-        contacts = iListOf(
+        contacts = listOf(
             ContactDto(
                 uid = uid,
                 name = name,
@@ -33,7 +34,7 @@ private inline fun IndividualDto.toCorporate() = CorporateDto(
 private inline fun CorporateDto.toIndividual() = IndividualDto(
     uid = uid,
     name = name,
-    comms = primaryContact?.comms ?: iListOf()
+    comms = primaryContact?.comms ?: listOf()
 )
 
 val CorporateDto.primaryContact get() = headQuarters.contacts.firstOrNull()

@@ -3,7 +3,8 @@
 
 package identifier
 
-import kollections.iListOf
+import kollections.listOf
+import kollections.List
 import krono.LocalDate
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
@@ -15,7 +16,7 @@ data class CorporateDto(
     override val name: String,
     override val image: String? = null,
     val headQuarters: CorporateBranchDto = CorporateBranchDto("Head Quarters"),
-    val branches: List<CorporateBranchDto> = iListOf(),
+    val branches: List<CorporateBranchDto> = listOf(),
     val registrationNo: String? = null,
     val registrationDate: LocalDate? = null,
     val taxPayerIdentificationNo: String? = null,
