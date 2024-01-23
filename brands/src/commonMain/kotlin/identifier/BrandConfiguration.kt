@@ -16,7 +16,7 @@ class BrandConfiguration(
 ) {
     fun toBrand() = Brand(
         name = name,
-        logo = "$domain/public/images/logo.png",
+        logo = "/public/images/logo.png",
         domain = domain,
         address = address,
         color = color,
