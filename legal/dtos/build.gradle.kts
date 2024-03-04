@@ -10,7 +10,7 @@ description = "A multiplatform library modeling legal entities"
 kotlin {
     jvm { library() }
     if (Targeting.JS) js(IR) { library() }
-    if (Targeting.WASM) wasmJs { library() }
+//    if (Targeting.WASM) wasmJs { library() }
     val osxTargets = if (Targeting.OSX) osxTargets() else listOf()
 //    val ndkTargets = if (Targeting.NDK) ndkTargets() else listOf()
     val linuxTargets = if (Targeting.LINUX) linuxTargets() else listOf()
