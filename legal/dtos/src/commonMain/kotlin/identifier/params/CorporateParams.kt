@@ -26,5 +26,6 @@ data class CorporateParams(
     val website: String? = null,
     val hqLocation: GeoLocation? = null,
     val address: AddressDto? = null,
-    val businessType: CorporateType? = null
+    val businessType: CorporateType? = null,
+    val verified:Boolean = false
 )

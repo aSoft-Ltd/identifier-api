@@ -12,6 +12,7 @@ sealed class LegalEntityDto {
     abstract val gid: String
     abstract val name: String
     abstract val image: String?
+    abstract val verified: Boolean
 
     val asIndividual get() = this as? IndividualDto
 

@@ -21,5 +21,6 @@ data class IndividualParams(
     val idDocumentNumber: String? = null,
     val idDocumentType: DocumentType? = null,
     val location: GeoLocation? = null,
-    val address: String? = null
+    val address: String? = null,
+    var verified: Boolean = false
 )

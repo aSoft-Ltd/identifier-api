@@ -15,6 +15,7 @@ data class CorporateDto(
     override val uid: String,
     override val name: String,
     override val image: String? = null,
+    override val verified: Boolean = false,
     val headQuarters: CorporateBranchDto = CorporateBranchDto("Head Quarters"),
     val branches: List<CorporateBranchDto> = listOf(),
     val registrationNo: String? = null,
