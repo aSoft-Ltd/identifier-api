@@ -26,4 +26,7 @@ data class CorporateDto(
     val industry: Industry? = null,
     override val gid: String = UNSET,
     @SerialName("businessType") val type: CorporateType = CorporateType.COMPANY,
+    override val creditAmount: Double? = null,
+    override val creditUsed: Double? = null,
+    override val leadTime: Int? = null,
 ) : LegalEntityDto()

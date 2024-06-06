@@ -26,6 +26,9 @@ data class IndividualDto(
     val idDocumentType: DocumentType? = null,
     val location: GeoLocation? = null,
     val address: String? = null,
+    override val creditAmount: Double? = null,
+    override val creditUsed: Double? = null,
+    override val leadTime: Int? = null,
 ) : LegalEntityDto() {
     val emails get() = comms.filterIsInstance<UserEmail>()
     val phones get() = comms.filterIsInstance<UserPhone>()
