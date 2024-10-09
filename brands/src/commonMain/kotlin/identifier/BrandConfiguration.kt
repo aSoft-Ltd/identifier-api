@@ -11,12 +11,13 @@ class BrandConfiguration(
     val domain: String,
     val address: String,
     val color: BrandColor,
+    val logo: String,
     @SerialName("social")
     val socials: List<BrandSocial> = emptyList()
 ) {
     fun toBrand() = Brand(
         name = name,
-        logo = "/public/images/logo.png",
+        logo = logo,
         domain = domain,
         address = address,
         color = color,
