@@ -5,6 +5,7 @@ package identifier.params
 
 import geo.AddressDto
 import geo.GeoLocation
+import identifier.AdditionalInfo
 import identifier.CorporateType
 import identifier.Industry
 import kotlinx.serialization.Serializable
@@ -27,5 +28,6 @@ data class CorporateParams(
     val hqLocation: GeoLocation? = null,
     val address: AddressDto? = null,
     val businessType: CorporateType? = null,
-    val verified:Boolean = false
+    val verified:Boolean = false,
+    var additionalInfo: AdditionalInfo = AdditionalInfo()
 )

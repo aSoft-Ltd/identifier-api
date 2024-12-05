@@ -3,6 +3,7 @@
 package identifier
 
 import geo.GeoLocation
+import kollections.Map
 import kotlinx.serialization.Serializable
 import kotlinx.JsExport
 
@@ -16,7 +17,7 @@ sealed class LegalEntityDto {
     abstract val creditAmount: Double?
     abstract val creditUsed: Double?
     abstract val leadTime: Int?
-
+    abstract val additionalInfo:AdditionalInfo
     val asIndividual get() = this as? IndividualDto
 
     val asCorporate get() = this as? CorporateDto

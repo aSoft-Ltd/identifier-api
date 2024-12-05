@@ -6,6 +6,7 @@ package identifier.params
 import identifier.DocumentType
 import identifier.Gender
 import geo.GeoLocation
+import identifier.AdditionalInfo
 import kotlinx.serialization.Serializable
 import krono.LocalDate
 import kotlinx.JsExport
@@ -22,5 +23,6 @@ data class IndividualParams(
     val idDocumentType: DocumentType? = null,
     val location: GeoLocation? = null,
     val address: String? = null,
-    var verified: Boolean = false
+    var verified: Boolean = false,
+    var additionalInfo: AdditionalInfo = AdditionalInfo()
 )

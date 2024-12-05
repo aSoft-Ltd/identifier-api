@@ -6,6 +6,7 @@ package identifier
 import geo.GeoLocation
 import kollections.listOf
 import kollections.List
+import kollections.Map
 import kollections.filterIsInstance
 import krono.LocalDate
 import kotlinx.serialization.Serializable
@@ -29,6 +30,7 @@ data class IndividualDto(
     override val creditAmount: Double? = null,
     override val creditUsed: Double? = null,
     override val leadTime: Int? = null,
+    override val additionalInfo: AdditionalInfo = AdditionalInfo()
 ) : LegalEntityDto() {
     val emails get() = comms.filterIsInstance<UserEmail>()
     val phones get() = comms.filterIsInstance<UserPhone>()

@@ -5,6 +5,7 @@ package identifier
 
 import kollections.listOf
 import kollections.List
+import kollections.Map
 import krono.LocalDate
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
@@ -29,4 +30,5 @@ data class CorporateDto(
     override val creditAmount: Double? = null,
     override val creditUsed: Double? = null,
     override val leadTime: Int? = null,
+    override val additionalInfo: AdditionalInfo = AdditionalInfo()
 ) : LegalEntityDto()
