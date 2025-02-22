@@ -28,13 +28,15 @@ private inline fun IndividualDto.toCorporate() = CorporateDto(
         ),
         location = location,
         address = address
-    )
+    ),
+    synced = synced
 )
 
 private inline fun CorporateDto.toIndividual() = IndividualDto(
     uid = uid,
     name = name,
-    comms = primaryContact?.comms ?: listOf()
+    comms = primaryContact?.comms ?: listOf(),
+    synced = synced
 )
 
 val CorporateDto.primaryContact get() = headQuarters.contacts.firstOrNull()

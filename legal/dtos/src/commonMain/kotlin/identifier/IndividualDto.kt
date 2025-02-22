@@ -30,7 +30,10 @@ data class IndividualDto(
     override val creditAmount: Double? = null,
     override val creditUsed: Double? = null,
     override val leadTime: Int? = null,
-    override val additionalInfo: AdditionalInfo = AdditionalInfo()
+    override val additionalInfo: AdditionalInfo = AdditionalInfo(),
+    override val synced: Boolean = true,
+    override val category: LegalEntityCategory? = null,
+    override val plan: LegalEntityPlan? = null
 ) : LegalEntityDto() {
     val emails get() = comms.filterIsInstance<UserEmail>()
     val phones get() = comms.filterIsInstance<UserPhone>()

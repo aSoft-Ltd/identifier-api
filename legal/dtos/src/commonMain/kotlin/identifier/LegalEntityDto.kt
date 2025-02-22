@@ -18,6 +18,9 @@ sealed class LegalEntityDto {
     abstract val creditUsed: Double?
     abstract val leadTime: Int?
     abstract val additionalInfo:AdditionalInfo
+    abstract val category: LegalEntityCategory?
+    abstract val plan: LegalEntityPlan?
+    abstract val synced:Boolean
     val asIndividual get() = this as? IndividualDto
 
     val asCorporate get() = this as? CorporateDto
